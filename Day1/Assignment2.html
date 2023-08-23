@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var favNum = [99,50,29,74,26,7,17,18,69,12];
+
+        var lessThan60 = favNum.filter((val) => {
+            return val < 60;
+        });
+
+        var doubleFavnums = lessThan60.map((val,idx,arr)=> val * 2 );
+        console.log(doubleFavnums)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

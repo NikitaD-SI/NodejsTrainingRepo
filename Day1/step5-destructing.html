@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var hero = {
+            title : "Ironman",
+            firstname : "Tony",
+            lastname : "Stark",
+            power : 7,
+            city : "New York"
+        };
+        // var temphero = hero;
+        // console.log(temphero.power);
+        // console.log(hero.power);
+        // temphero.power = 10;
+        // console.log(temphero.power);
+        // console.log(hero.power);
+
+        var {title, firstname, lastname, city, power } = hero;
+
+        console.log(power);
+        console.log(hero.power);
+        power = 10;
+        console.log(power);
+        console.log(hero.power);
+        console.log(hero)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

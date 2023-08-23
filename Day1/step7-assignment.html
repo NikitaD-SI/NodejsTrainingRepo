@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var cart = {
+        //     title : "Cart",
+        //     getCoastPrice : function(){
+        //         return 100;
+        //     },
+        //     getsellingprice : function(){
+        //         var calculateProfit = function(arg){
+        //         return arg.getCoastPrice() * 0.2;
+        //     }
+        //         return this.getCoastPrice()+calculateProfit(this);
+        //     }
+        // };
+
+        // var cart = {
+        //     title : "Cart",
+        //     getCoastPrice : function(){
+        //         return 100;
+        //     },
+        //     getsellingprice : function(){
+        //         var calculateProfit = function(){
+        //         return this.getCoastPrice() * 0.2;
+        //     }
+        //          return this.getCoastPrice()+calculateProfit.bind(this)();
+        //         //return this.getCoastPrice()+calculateProfit.apply(this);
+        //     }
+        // };
+
+        var cart = {
+            title : "Cart",
+            getCoastPrice : function(){
+                return 100;
+            },
+            getsellingprice : function(){
+                var calculateProfit = () => {
+                return this.getCoastPrice() * 0.2;
+            }
+                 return this.getCoastPrice()+calculateProfit();
+                //return this.getCoastPrice()+calculateProfit.apply(this);
+            }
+        };
+        console.log(cart.getsellingprice());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
